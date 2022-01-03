@@ -98,9 +98,9 @@
     </section>
     <section class="cart-main">
       <div class="container">
-        <div class="row">
-          <div class="col-md-7">
-            <div class="d-flex justify-content-between">
+        <div class="row shadow-cartbox">
+          <div class="col-md-7 shopping-cart">
+            <div class="d-flex justify-content-between pt-10">
               <h3 class="text-start"><strong>Shopping Cart</strong></h3>
               <h3 class="text-end"><strong>3 items</strong></h3>
             </div> 
@@ -179,9 +179,98 @@
             </div>
             </div>
           </div>
-          <div class="col-md-5">
-            <div class="d-inline-flex bd-highlight"> <h3><strong> Order Summary</strong></h3></div>
+          <div class="col-md-5 order-summary">
+            <div class="d-inline-flex bd-highlight pt-10"> <h3><strong> Order Summary</strong></h3></div>
             <hr>
+            <div class="d-flex justify-content-between pt-10">
+              <h5 class="text-uppercase"><strong>Items 3</strong></h5>
+              <h5><strong>$600</strong></h5>
+            </div>
+            <div class="shipping-option">
+              <label for="exampleDataList" class="form-label"><strong>SHIPPING</strong></label>
+              <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Standard Delivery - $10">
+                <datalist id="datalistOptions">
+                  <option value="San Francisco">
+                  <option value="New York">
+                  <option value="Seattle">
+                  <option value="Los Angeles">
+                  <option value="Chicago">
+                </datalist>
+            </div>
+            <div class="promotion-code">
+              <label for="validationDefault03" class="form-label text-uppercase"><strong>promotion code</strong></label>
+              <input type="text" class="form-control" id="validationDefault03" placeholder="Enter your Code" required>
+            </div>
+            <button type="button" class="btn btn-secondary text-uppercase pt-10">apply</button>
+            <hr>
+            <div class="d-flex justify-content-between pt-10">
+              <h5 class="text-uppercase"><strong>total cost</strong></h5>
+              <h5><strong>$600</strong></h5>
+            </div>
+            <div class="d-grid gap-2 pt-10">
+              <button class="btn btn-primary" type="button">Button</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="recent-products similar-products">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h4><strong>You May Also Be Interested In : </strong></h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class=" col-sm-3 col-md-3 product-image">
+            <a href="#"><img src="assets/images/female1.jpg"  alt="product-1"></a>
+            <div class="product-overlay-icon">
+              <ul>
+                <li><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
+            <h3 class="product-title"><strong>Denim Pant</strong></h3>
+            <p class="product-price"><strong>$150</strong><span class="strike"><strong>$250</strong></span></p>
+          </div>
+          <div class="col-sm-3 col-md-3 product-image">
+            <a href="#"><img src="assets/images/female2.jpg"  alt="product-1"></a>
+            <div class="product-overlay-icon">
+              <ul>
+                <li><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
+            <h3 class="product-title"><strong>Party Skirt</strong></h3>
+            <p class="product-price"><strong>$250</strong></p>
+          </div>
+          <div class="col-sm-3 col-md-3 product-image">
+            <a href="#"><img src="assets/images/female3.jpg"  alt="product-1"></a>
+            <div class="sale-tag">
+              <img src="assets/images/sale.png" alt="sale-tag">
+            </div>
+            <div class="product-overlay-icon">
+              <ul>
+                <li><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
+            <h3 class="product-title"><strong>Party Skirt</strong></h3>
+            <p class="product-price"><strong>$250</strong></p>
+          </div>
+          <div class="col-sm-3 col-md-3 product-image">
+            <a href="#"><img src="assets/images/female3.jpg"  alt="product-1"></a>
+            <div class="sale-tag">
+              <img src="assets/images/sale.png" alt="sale-tag">
+            </div>
+            <div class="product-overlay-icon">
+              <ul>
+                <li><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
+            <h3 class="product-title"><strong>Party Skirt</strong></h3>
+            <p class="product-price"><strong>$250</strong></p>
           </div>
         </div>
       </div>
