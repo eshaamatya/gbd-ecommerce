@@ -923,7 +923,7 @@ h5.media-heading a{
     color:#ababab;
 }
 .cart-main  table .form-control{
-    width:50%;
+    width:62%;
     background-color: #ECF0F1;
     font-weight: bold;
     color:#707070;
@@ -949,6 +949,10 @@ span.cart-price{
 }
 .order-summary h5{
     font-size: 16px;
+}
+.order-summary .form-select:focus{
+    box-shadow:none;
+    border-color:transparent;
 }
 .shipping-option,
 .promotion-code{
@@ -979,4 +983,8 @@ span.cart-price{
 }
 .recent-products h4{
     margin-bottom: 20px;
+}
+.media img{
+    width:70px;
+    height:90px;
 }

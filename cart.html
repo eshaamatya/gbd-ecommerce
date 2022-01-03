@@ -118,17 +118,16 @@
                     </thead>
                     <tbody>
                       <tr>
-                          <td class="col-sm-9 col-md-6">
+                          <td class="col-sm-8 col-md-6">
                           <div class="media">
-                              <a class="thumbnail pull-left" href="#"> <img class="media-object" src="assets/images/female5.jpg" style="width: 70px; height: 90px;"> </a>
+                              <a class="thumbnail pull-left" href="#"> <img class="media-object" src="assets/images/female5.jpg"> </a>
                               <div class="media-body">
                                   <h4 class="media-heading"><a href="#"><strong>Short Skirt</strong></a></h4>
                                   <h5 class="media-heading"><a href="#"><strong>Women</strong></a></h5>
-                                  <span>Status: </span><span class="text-success"><strong>In Stock</strong></span>
                                   <p><a href="#">Remove</a></p>
                               </div>
                           </div></td>
-                          <td class="col-sm-1 col-md-2">
+                          <td class="col-sm-2 col-md-2">
                           <input type="email" class="form-control" id="exampleInputEmail1" value="2">
                           </td>
                           <td class="col-sm-1 col-md-2 text-center"><span class="cart-price"><strong>$150</strong></span></td>
@@ -136,34 +135,32 @@
                         
                       </tr>
                       <tr>
-                        <td class="col-sm-9 col-md-6">
+                        <td class="col-sm-8 col-md-6">
                         <div class="media">
-                            <a class="thumbnail pull-left" href="#"> <img class="media-object" src="assets/images/female6.jpg" style="width: 70px; height: 90px;"> </a>
+                            <a class="thumbnail pull-left" href="#"> <img class="media-object" src="assets/images/female6.jpg"> </a>
                             <div class="media-body">
                                 <h4 class="media-heading"><a href="#">Long Coat</a></h4>
                                 <h5 class="media-heading"><a href="#">Women</a></h5>
-                                <span>Status: </span><span class="text-success"><strong>In Stock</strong></span>
                                 <p><a href="#">Remove</a></p>
                             </div>
                         </div></td>
-                        <td class="col-sm-1 col-md-2">
+                        <td class="col-sm-2 col-md-2">
                         <input type="email" class="form-control" id="exampleInputEmail1" value="1">
                         </td>
                         <td class="col-sm-1 col-md-2 text-center"><span class="cart-price"><strong>$150</strong></span></td>
                         <td class="col-sm-1 col-md-2 text-center"><span class="cart-price"><strong>$150</strong></span></td>
                       </tr>
                       <tr>
-                        <td class="col-sm-9 col-md-6">
+                        <td class="col-sm-8 col-md-6">
                         <div class="media">
-                            <a class="thumbnail pull-left" href="#"> <img class="media-object" src="assets/images/female7.jpg" style="width: 70px; height: 90px;"> </a>
+                            <a class="thumbnail pull-left" href="#"> <img class="media-object" src="assets/images/female7.jpg"> </a>
                             <div class="media-body">
                                 <h4 class="media-heading"><a href="#">Pant</a></h4>
-                                <h5 class="media-heading"> by <a href="#">Women</a></h5>
-                                <span>Status: </span><span class="text-success"><strong>In Stock</strong></span>
+                                <h5 class="media-heading"><a href="#">Women</a></h5>
                                 <p><a href="#">Remove</a></p>
                             </div>
                         </div></td>
-                        <td class="col-sm-1 col-md-2">
+                        <td class="col-sm-2 col-md-2">
                         <input type="email" class="form-control" id="exampleInputEmail1" value="1">
                         </td>
                         <td class="col-sm-1 col-md-2 text-center"><span class="cart-price"><strong>$250</strong></span></td>
@@ -188,14 +185,12 @@
             </div>
             <div class="shipping-option">
               <label for="exampleDataList" class="form-label"><strong>SHIPPING</strong></label>
-              <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Standard Delivery - $10">
-                <datalist id="datalistOptions">
-                  <option value="San Francisco">
-                  <option value="New York">
-                  <option value="Seattle">
-                  <option value="Los Angeles">
-                  <option value="Chicago">
-                </datalist>
+              <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                <option selected>Standard Delivery - $5</option>
+                <option value="1">Delivery Outside valley - $10</option>
+                <option value="2">Free Delivery</option>
+                <option value="3">Cash On Delivery</option>
+              </select>
             </div>
             <div class="promotion-code">
               <label for="validationDefault03" class="form-label text-uppercase"><strong>promotion code</strong></label>
@@ -208,7 +203,7 @@
               <h5><strong>$600</strong></h5>
             </div>
             <div class="d-grid gap-2 pt-10">
-              <button class="btn btn-primary" type="button">Button</button>
+              <button class="btn btn-primary text-uppercase" type="button">checkout</button>
             </div>
           </div>
         </div>
