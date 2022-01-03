@@ -884,3 +884,51 @@ ul.star-rating li{
 .similar-products .product-overlay-icon ul li a{
     padding:10px;
 }
+/*cartpage*/
+.cart-main .table th{
+    color:#ababab;
+    text-transform: uppercase;
+}
+.cart-main .table>:not(:first-child){
+    border:2px solid transparent;
+}
+.cart-main .media-body{
+    padding-left:80px;
+}
+h4.media-heading,
+h5.media-heading{
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+h4.media-heading a{
+    color:#707070;
+    text-decoration: none;
+}
+h5.media-heading a{
+    text-decoration: none;
+    color:#ffc104;
+}
+
+.media-body span,
+.media-body p a{
+    font-size: 12px;
+}
+.media-body p a,
+.cart-main p a{
+    text-decoration: none;
+    color:#ababab;
+}
+.cart-main  table .form-control{
+    width:50%;
+    background-color: #ECF0F1;
+    font-weight: bold;
+    color:#707070;
+}
+.cart-main .form-control:focus{
+    border-color: transparent;
+    box-shadow:none;
+}
+span.cart-price{
+    color:#707070;
+}
