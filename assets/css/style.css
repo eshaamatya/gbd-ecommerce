@@ -20,6 +20,9 @@ img{
     display: inline-block;
     width:100%;
 }
+.pts-5{
+    padding-top:10px;
+}
 .pt-10{
     padding: 10px;
 }
@@ -989,8 +992,8 @@ span.cart-price{
     height:90px;
 }
 /*checkout*/
-.checkout-detail tbody{
-    border:1px solid transparent;
+.checkout-detail{
+    margin:50px 0;
 }
 .checkout-detail .border{
     padding:30px;
@@ -1052,4 +1055,14 @@ span.cart-price{
     background-color: #ffc104;
     color:#fff;
     border-color: #ffc104;
+}
+.checkout-detail table .form-control{
+    width:40%;
+    background-color: #fff;
+}
+.checkout-detail .cart-total{
+    padding-top:20px;
+}
+.checkout-detail span.discount-desc{
+    color:#ffc104;
 }
