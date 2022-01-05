@@ -988,3 +988,68 @@ span.cart-price{
     width:70px;
     height:90px;
 }
+/*checkout*/
+.checkout-detail tbody{
+    border:1px solid transparent;
+}
+.checkout-detail .border{
+    padding:30px;
+}
+.checkout-detail .form-check {
+    padding-left:0;
+}
+
+.checkout-detail .form-check .form-check-input{
+    float:none;
+    margin-left: 0;
+    padding:5px;
+}
+.checkout-detail .form-check-input:checked{
+    border-color:#ffc104;
+    background-color: #ffc104;
+}
+.checkout-detail .form-check-input:focus{
+    box-shadow: none;
+    border-color: #ffc104;
+}
+.checkout-detail .input {
+    position: relative
+}
+
+.checkout-detail .input i {
+    position: absolute;
+    top: 12px;
+    right: 13px;
+    color: #989898
+}
+.checkout-detail .form-control:focus{
+    border:1px solid #ababab;
+}
+.card-details{
+    padding:10px 0;
+}
+.card-details span{
+    padding-top: 8px;
+}
+.card-details span a{
+    text-decoration: none;
+    color:#ababab;
+}
+.card-details span a:hover{
+    color: #ffc104;
+}
+.card-details .btn-primary{
+    color: #fff;
+    background-color: #000;
+    border-radius: 0;
+    padding: 8px 16px;
+    border-color: #000;
+}
+.card-details .btn-primary:active:focus{
+    box-shadow:none;
+}
+.card-details .btn-primary:hover{
+    background-color: #ffc104;
+    color:#fff;
+    border-color: #ffc104;
+}
