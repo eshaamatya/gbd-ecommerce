@@ -374,7 +374,9 @@
     h4.media-heading, h5.media-heading{
         font-size: 12px;
     }
-  
+    .login_wrapper h2::before, .login_wrapper h2::after{
+        width:45px;
+    }
 }
 @media (max-width: 576px) { 
     .carousel-caption h3{
