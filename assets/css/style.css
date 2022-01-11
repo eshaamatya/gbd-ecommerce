@@ -1204,3 +1204,6 @@ span.cart-price{
 .login-heading{
     padding:15px 0;
 }
+.hidden{
+    display: none;
+}

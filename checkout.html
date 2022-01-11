@@ -110,11 +110,11 @@
                         <span class="checkout-heading">Card Type</span>
                     </div>
                 </div>
-                <div class="row card-details">
+                <div class="row card-details payment-method">
                     <div class="col-md-6">
                         <div class="border">
                             <div class="form-check text-center">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                                <input class="form-check-input active" type="radio" name="flexRadioDefault" id="flexRadioDefault1" data-tab-id="credit-card" checked>
                                 <br><label class="form-check-label" for="flexRadioDefault1">
                                   Credit Card
                                 </label>
@@ -124,7 +124,7 @@
                     <div class="col-md-6">
                         <div class="border">
                             <div class="form-check text-center">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" data-tab-id="pay-pal">
                                 <br><label class="form-check-label" for="flexRadioDefault2">
                                   Paypal
                                 </label>
@@ -132,27 +132,41 @@
                         </div>  
                     </div>
                 </div>
-                <div class="row card-details">
-                    <div class="col-md-12">
-                        <span class="checkout-heading">Card Number</span>
+                <div id="credit-card" class="tab active">
+                    <div class="row card-details">
+                        <div class="col-md-12">
+                            <span class="checkout-heading">Card Number</span>
+                        </div>
+                    </div>
+                    <div class="row card-details">
+                        <div class="col-md-12">
+                            <div class="input"> <i class="fa fa-credit-card"></i> <input type="text" class="form-control" placeholder="0000 0000 0000 0000"> </div>
+                        </div>
+                    </div>
+                    <div class="row card-details">
+                        <div class="col-md-12">
+                            <div class="input"> <i class="fa fa-user"></i> <input type="text" class="form-control" placeholder="Card Holder Name"> </div>
+                        </div>
+                    </div>
+                    <div class="row card-details">
+                        <div class="col-md-6">
+                            <div class="input"><i class="fa fa-calendar" aria-hidden="true"></i><input type="text" class="form-control" placeholder="Expiry Date"> </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="input"><i class="fa fa-info-circle" aria-hidden="true"></i><input type="password" class="form-control" placeholder="CVV Code"> </div>
+                        </div>
                     </div>
                 </div>
-                <div class="row card-details">
-                    <div class="col-md-12">
-                        <div class="input"> <i class="fa fa-credit-card"></i> <input type="text" class="form-control" placeholder="0000 0000 0000 0000"> </div>
+                <div id="pay-pal" class="tab hidden">
+                    <div class="row card-details">
+                        <div class="col-md-12">
+                            <div class="input"> <i class="fa fa-user"></i> <input type="email" class="form-control" placeholder="Paypal email address"> </div>
+                        </div>
                     </div>
-                </div>
-                <div class="row card-details">
-                    <div class="col-md-12">
-                        <div class="input"> <i class="fa fa-user"></i> <input type="text" class="form-control" placeholder="Card Holder Name"> </div>
-                    </div>
-                </div>
-                <div class="row card-details">
-                    <div class="col-md-6">
-                        <div class="input"><i class="fa fa-calendar" aria-hidden="true"></i><input type="text" class="form-control" placeholder="Expiry Date"> </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="input"><i class="fa fa-info-circle" aria-hidden="true"></i><input type="password" class="form-control" placeholder="CVV Code"> </div>
+                    <div class="row card-details">
+                        <div class="col-md-12">
+                            <button type="button" class="btn btn-primary text-uppercase">Add Paypal</button>
+                        </div>
                     </div>
                 </div>
                 <div class="row card-details">
@@ -278,6 +292,7 @@
         </div>
     </div>
     </section>
+    
     <footer class="footer">
     <div class="container">
         <div class="row">

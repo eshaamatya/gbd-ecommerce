@@ -53,4 +53,17 @@ $(function() {
   
   }
   // Get the element with id="defaultOpen" and click on it
-  document.getElementById("defaultOpen").click();
+  if(document.getElementById("defaultOpen")){
+    document.getElementById("defaultOpen").click();
+  }
+  jQuery('.payment-method input.form-check-input').click(function(){
+    var isActive = jQuery(this).hasClass('active');
+    if(isActive){ return; }
+    
+    jQuery('.payment-method input.form-check-input.active').removeClass('active');
+    jQuery(this).addClass('active');
+
+    var targetTab = jQuery(this).data('tab-id');
+    jQuery('.tab.active').removeClass('active').addClass('hidden');
+    jQuery('#'+targetTab).removeClass('hidden').addClass('active');
+});
