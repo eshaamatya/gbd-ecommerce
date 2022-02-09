@@ -1,0 +1,1 @@
+{"version":3,"sources":["header.scss","header.css"],"names":[],"mappings":"AAAA,KAEI,oBAAA,CADA,SAAA,CAEA,cAAA,CACA,eCCJ","file":"header.css","sourcesContent":["body{\r\n    color: red;\r\n    background-color: red;\r\n    font-size: 12px;\r\n    text-align: left;\r\n}","body {\n  color: red;\n  background-color: red;\n  font-size: 12px;\n  text-align: left;\n}"]}

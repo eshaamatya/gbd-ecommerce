@@ -1,0 +1,44 @@
+/*footer*/
+@import './variables';
+
+.footer{
+    background-color: $secondaryColor;
+    padding:50px 0;
+    img{
+        width:50%;
+        height:70px;
+    }
+    h5{
+        color:$darkYellow;
+    }
+    p.footer-description{
+        padding-top: 20px;
+        color:$primaryColor;
+    }
+    ul{
+        padding-left:0;
+        li{
+            display:block;
+            i{
+                color:$primaryColor;
+                font-size: 18px;
+                padding-right: 5px;
+            }
+        }
+        a {
+            font-size:18px;
+            color:$primaryColor;
+            text-decoration: none;
+            &:hover{
+                color:$darkYellow;
+            }
+        }
+        address{
+           @extend a; 
+        }
+    }
+    .social-media li{
+        padding-right:10px;
+        display:inline-block;
+    }
+}

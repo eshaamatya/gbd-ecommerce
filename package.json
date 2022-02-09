@@ -1,0 +1,22 @@
+{
+  "name": "gbd-ecommerce",
+  "version": "1.0.0",
+  "description": "Internship project",
+  "main": "index.js",
+  "author": "Esha Amatya",
+  "license": "MIT",
+  "homepage": "https://github.com/eshaamatya/gbd-ecommerce#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.2.6",
+    "browser-sync": "^2.27.4",
+    "cssnano": "^5.0.6",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-postcss": "^9.0.0",
+    "gulp-replace": "^1.1.3",
+    "gulp-sass": "^5.0.0",
+    "gulp-terser": "^2.0.1",
+    "postcss": "^8.3.5",
+    "sass": "^1.35.2"
+  }
+}
