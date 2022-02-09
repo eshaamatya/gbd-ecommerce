@@ -58,6 +58,13 @@
     background-color:$darkYellow;
     border-color:$darkYellow;
 }
+%deals-Heading{
+    background-color:$secondaryColor;
+    color:$darkYellow;
+    padding: 10px 0;
+    margin:0;
+    margin-bottom: 20px;
+}
 
 *{
     margin: 0;
@@ -1170,13 +1177,7 @@ margin:50px 0;
     }
 }
 /* Hot Deals */
-%deals-Heading{
-    background-color:$secondaryColor;
-    color:$darkYellow;
-    padding: 10px 0;
-    margin:0;
-    margin-bottom: 20px;
-}
+
 .flash-deal_header{
     margin:50px 0 ;
     .deals-heading{
@@ -1222,8 +1223,43 @@ margin:50px 0;
 }
 /* Contact page */
 .contact-wrapper{
-    margin:50px 0;
+    padding:50px 0;
+    background-color: $lightBlue;
     .deals-heading{
         @extend %deals-Heading;
+    }
+    .contact-map{
+        overflow: hidden;
+    }
+    .contact-details{
+        margin:0 auto;
+        .form-control{
+            margin:5px 0;
+            background-color: $secondaryColor;
+            color:$darkYellow;
+            &:focus{
+                border-color: $darkYellow;
+                box-shadow: 0 0 0 0.25rem $darkYellow;
+            }
+        }
+        label{
+            font-weight: bold;
+        }
+        input,textarea{
+            &::placeholder{
+                color:$primaryColor;
+            }
+        }
+        .btn.submit{
+                color:$primaryColor;
+                background-color:$secondaryColor;
+                margin: 5px 0;
+                &:focus{
+                    color:$darkYellow;
+                    border-color: $darkYellow;
+                    box-shadow: 0 0 0 0.25rem $darkYellow;
+                }
+        }
+
     }
 }
