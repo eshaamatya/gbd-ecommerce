@@ -241,12 +241,12 @@ p.sub-heading{
         width: 50%;
         transition: .5s ease;
         opacity:0;
-        padding: 20px;
+        padding: 5px;
         text-align: center;
         a{
             @include backgroundOpacity($secondaryColor, 0.5);
             color:$primaryColor;
-            padding:20px;
+            padding:15px;
             border:1px solid $primaryColor;
             &:hover{
                 color:$darkYellow;
