@@ -60,9 +60,7 @@ header.sub-pages{
     .bgcolor-black{
         background-color:$secondaryColor;
     }
-}
-
-   ul.header-icons{
+    .header-icons{
         margin-top:15px;
         li{
             position: relative;
@@ -76,6 +74,9 @@ header.sub-pages{
         }
         
     }
+}
+
+
 
 .box{
     @include boxPosition();

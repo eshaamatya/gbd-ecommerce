@@ -1,7 +1,15 @@
 @import './variables';
 @media (min-width: 1400px) { 
-    .deals-heading{
-        padding:7rem 0.1rem;
+    .hot-deals{
+        .deals-product{
+            .deals-heading{
+                padding:7rem 0.1rem;
+                h5{
+                    font-size: 20px;
+                    padding-bottom: 10px;
+                }
+            }
+        }
     }
     .blog-part .blog-description {
         left: 0;
@@ -41,34 +49,47 @@
     }
  }
 @media (max-width: 1200px) { 
-    .carousel-caption{
-        text-align: center;
-        width: 50%;
-        left: 25%;
-        top: 50%;
-        
+/*hero*/
+    .hero{
+        .carousel-caption{
+            text-align: center;
+            width: 50%;
+            left: 25%;
+            top: 50%;   
+            h3{
+                font-size:30px; 
+            }
+            p{
+                font-size:18px;
+                line-height: 30px;
+            }
+            .btn-primary{
+                padding:5px 20px;
+            }
+        }
     }
-    .carousel-caption h3{
-        font-size:30px;
+ /*hot deals */
+    .hot-deals{
+        .deals-product{
+            .deals-heading{
+                padding:5rem 0.1rem;
+                h5{
+                    font-size: 15px;
+                    padding-bottom: 10px;
+                }
+            }
+        }
     }
-    .carousel-caption p{
-        font-size:18px;
-        line-height: 30px;
-    }
-    .carousel-item .btn-primary{
-        padding:10px 20px;
-    }
-    .deals-heading{
-        padding:5rem 0.1rem;
+    h2.main-heading{
+        &::before{
+            left:18%;
+        }
+        &::after{
+            right:18%;
+        }
     }
     .newsletter-signup .btn-primary{
         left:50%;
-    }
-    h2:before{
-        left:18%;
-    }
-    h2:after{
-        right:18%;
     }
     .product-overlay-icon{
         left:0%;
@@ -95,61 +116,85 @@
         line-height: 18px;
     }
  }
-@media (max-width: 992px) { 
-    .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
-        color: #F1C40F;
-    }
-    .mid-header .navbar-light .navbar-nav{
-        padding:10px;
-        background-color: #000;
-    }
-    .mid-header .navbar-light ul.navbar-nav{
-        padding-bottom: 0;
-        margin-bottom: 0 !important;
-    }
-    .mid-header ul.header-icons {
-        margin-top: 0px;
-        background-color: #000;
-        padding:10px;
+@media (max-width: 992px) {
+/*header */ 
+    .mid-header{
+        .navbar-light{
+            .navbar-nav{
+                padding:10px;
+                background-color:$secondaryColor;
+                margin-bottom: 0 !important;
+                padding-bottom: 0;
+                .show>{
+                    .nav-link{
+                        color:$darkYellow;
+                        &:active{
+                            color:$darkYellow;
+                        }
+                     }
+                }
+            }
+            .navbar-toggler{
+                color:transparent;
+            }
+            .navbar-toggler-icon.bg-black{
+                background-image:url(../../assets/images/menubar.png);
+            }
+        }
+        .header-icons {
+            margin-top: 0px;
+            background-color:$secondaryColor;
+            padding:10px;
+        } 
     } 
-    .navbar-light .navbar-toggler-icon.bg-black{
-        background-image:url(../../assets/images/menubar.png);
-    }
     .box{
         position:relative;
         top:0;
         left:0;
         transform:none;
         padding-left:0;
+        .input {
+            margin-right:10px;
+            &:hover{
+                width:215px;
+            }
+        }
+        i{
+            right:19px;
+        }
     }
-    .box .input {
-        margin-right:10px;
+/*carousel*/
+    .hero{
+        .carousel-caption{
+            text-align: center;
+            width: 50%;
+            left: 25%;
+            top: 60%;
+        }
     }
-    .box i{
-        right:19px;
+
+/*hot deals*/
+    .hot-deals{
+        .deals-product{
+            .deals-heading{
+                padding:3rem 0.1rem;
+            }
+        }
     }
-    /*carousel*/
-    .carousel-caption{
-        text-align: center;
-        width: 50%;
-        left: 25%;
-        top: 50%;
-    }
-    /*hot deals*/
-    .deals-heading{
-        padding:3rem 0.1rem;
-    }
-        /*our-products*/
-        h2:before{
-            width:60px;
+   
+/*our-products*/
+    h2.main-heading{
+        &::before{
+            width:70px;
             left: 18%;
-            top: 30%;
+            top: 40%;
         }
-        h2:after{
-            width:60px;
+        &::after{
+            width:70px;
             right: 18%;
-            top: 30%;
+            top: 40%;
         }
+    }
         .product-overlay-icon{
             left:5%;
             width:80%;
@@ -247,51 +292,66 @@
     }
 
 /*carousel*/
-    .carousel-item{
-        height:0px;
+    .hero{
+        .carousel-item{
+            height:0px;
+            .carousel-caption{
+                top: 60%;
+                text-align: center;
+                width: 52%;
+                p{
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+            }
+            .btn-primary{
+                font-size: 15px;
+                padding:5px 10px;
+            }
+        }
+
     }
-    .carousel-caption{
-        top: 60%;
-    }
-    .carousel-caption p{
-        font-size: 14px;
-        line-height: 20px;
-    }
-    .carousel-item .btn-primary{
-        font-size: 15px;
-        padding:5px 10px;
-    }
-    /*hot- deals */
+
+/*hot- deals */
+.hot-deals{
     .deals-product{
-        margin-bottom: 20px;
+        margin-bottom: 0px;
+        .deals-heading{
+            padding:2rem 0.1rem;
+            h5{
+                padding-bottom: 10px;
+            }
+            .btn-primary{
+                font-size: 12px;
+            }
+        }
     }
-    .deals-heading{
-        padding:2rem 0.1rem;
-    }
-    .deals-heading h5{
-        font-size: 16px;
-    }
-    /*our-products*/
+}
+
+/*our-products*/
     h2.main-heading{
         font-size: 20px;
+        &::before{
+            width:45px;
+            left: 20%;
+            top: 43%;
+        }
+        &::after{
+            width:45px;
+            right: 20%;
+            top: 43%;
+        }
     }
-    h2:before{
-        width:40px;
-        left: 20%;
-        top: 25%;
+    .product-image{
+        .product-overlay-icon{
+            left:1%;
+            padding:10px;
+            a{
+                padding:10px;
+            }
+        }
     }
-    h2:after{
-        width:40px;
-        right: 20%;
-        top: 25%;
-    }
-    .product-overlay-icon{
-        left:1%;
-        padding:10px;
-    }
-    .product-overlay-icon ul li a{
-        padding:10px;
-    }
+    
     h3.product-title{
         font-size: 14px;
         padding-top: 5px;
@@ -380,27 +440,55 @@
     }
 }
 @media (max-width: 576px) { 
-    .carousel-caption h3{
-        font-size: 25px;
+
+/*header*/
+    .box{
+        .input {
+            &:hover{
+                width:165px;
+            }
+        }  
     }
-    .deals-heading{
-        padding:2.8rem 0.1rem;
+/*hero*/
+    .hero{
+        .carousel-caption {
+            h3{
+            font-size: 25px;
+            }
+        }
+        
     }
-    h2:before {
-        left:5%;
-        width:35px;
+/*hot Deals*/
+.hot-deals{
+    .deals-product{
+        margin-bottom:20px;
+        .deals-heading{
+            padding:2.5rem 0.1rem;
+            h5{
+                font-size: 18px;
+            }
+        }
     }
-    h2:after{
-        right:5%;
-        width:35px;
+}
+/*our products*/
+    h2.main-heading{
+        &::before{
+            left:5%;
+            width:40px;
+        }
+        &::after{
+            right:5%;
+            width:40px;
+        }
     }
-    .product-overlay-icon{
-        left:15%;
-        width:60%;
+    .product-image{
+        padding-bottom: 10px;
+        .product-overlay-icon{
+            left:15%;
+            width:60%;
+        }
     }
-    .box:hover input{
-        width:150px;
-    }
+/*blog*/
     .blog-part a h5{
         padding-top: 10px;
     }

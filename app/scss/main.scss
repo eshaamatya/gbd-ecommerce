@@ -1,7 +1,7 @@
 @import './variables';
 @import "./header";
 @import"./footer";
-@import "./responsive";
+
 
 @mixin blackBg{
     content:"";
@@ -118,22 +118,22 @@ img{
                 border:1px solid $secondaryColor;
             }
         }
-        .carousel-caption {
-            text-align: right;
-            width: 25%;
-            left: unset;
-            top: 50%;
-            bottom: unset;
-            transform: perspective(1px) translateY(-50%);
-            z-index: 1;
-            h3{
-                font-size:40px;
-            }
-            p{
-                color:$primaryColor;
-                font-size:18px;
-                line-height: 25px;
-            }
+    }
+    .carousel-caption {
+        text-align: right;
+        width: 25%;
+        left: unset;
+        top: 50%;
+        bottom: unset;
+        transform: perspective(1px) translateY(-50%);
+        z-index: 1;
+        h3{
+            font-size:40px;
+        }
+        p{
+            color:$primaryColor;
+            font-size:18px;
+            line-height: 25px;
         }
     }
     .drk{
@@ -1268,3 +1268,4 @@ margin:50px 0;
 
     }
 }
+@import "./responsive";
