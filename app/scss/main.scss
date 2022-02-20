@@ -181,7 +181,8 @@ img{
     }
 }
 
-.btn-check:focus+.btn-primary, .btn-primary:focus{
+.btn-check:focus+.btn-primary,
+.btn-primary:focus{
     box-shadow:0 0 0 0.25rem $darkYellow;  
 }
 
@@ -564,7 +565,7 @@ p.sub-heading{
                 -o-transition: all 0.25s ease;
                 transition: all 0.25s ease;
                 &:hover{
-                    background: $darkYellow;
+                    background: $lightGrey;
                     color:$primaryColor;
                 }
             }
@@ -622,6 +623,9 @@ p.sub-heading{
     }
     ul{
         padding-left: 0px;
+    }
+    ul.breadcrumb{
+        padding-left: 10px;
     }
 }
 .stock-rating{
