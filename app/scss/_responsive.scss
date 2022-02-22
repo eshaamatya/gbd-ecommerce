@@ -318,17 +318,23 @@
         }
     }
 
-    .filter-content .form-control{
-        padding: 5px;
-        font-size: 12px;
-        width:60%;
+    .filter-content {
+        .form-control{
+            padding: 5px;
+            font-size: 12px;
+            width:60%;
+        }
     }
-    .filter-button .btn-primary{
-        font-size: 12px;
+    .filter-button {
+        .btn-primary{
+            font-size: 12px;
+        }
     }
-    .main-text .sale-tag{
-        width:22px;
-        right:10%;
+    .main-text {
+        .sale-tag{
+            width:22px;
+            right:10%;
+        }
     }
 }
 @media (max-width: 768px) { 
@@ -506,37 +512,43 @@
          }
     }
 
-    .similar-products .sale-tag{
-        width:22px;
-        right:10%;
-    }
-    .similar-products .product-overlay-icon{
-        top:35%;
-        left:11%;
+    .similar-products {
+        .sale-tag{
+            width:22px;
+            right:10%;
+        }
+        .product-overlay-icon{
+            top:35%;
+            left:11%;
+        }
     }
     /*cart-page */
-    .shopping-cart h3,
-    .order-summary h3{
-        font-size: 18px;
+    .shadow-cartbox{
+        h3{
+            font-size: 18px;
+        }
     }
-    .media img{
+    .media {
+        img{
         width:50px;
         height:70px;
+        }
     }
-    .cart-main table .form-control{
-        width:80%;
-    }
-    .cart-main .media-body{
-        padding-left: 60px;
-    }
-    .cart-main .table th{
-        font-size: 11px;
-    }
-    h4.media-heading, h5.media-heading{
-        font-size: 12px;
-    }
-    .login_wrapper h2::before, .login_wrapper h2::after{
-        width:45px;
+    .cart-main{
+        table{
+            th{
+                font-size: 11px;
+            }
+            .form-control{
+                width:80%;
+            }
+        }
+        .media-body{
+            padding-left: 60px;
+        }
+        .media-heading{
+            font-size: 12px;
+        }
     }
     /*footer*/
     .footer {
@@ -728,25 +740,30 @@
     }
  }
  /*cart page */
- .shopping-cart h3,
- .order-summary h3{
-     font-size: 18px;
+ .shadow-cartbox{
+     h3{
+        font-size: 18px;
+     }
  }
- .media img{
+ .media {
+     img{
      width:50px;
      height:70px;
+     }
  }
- .cart-main .media-body{
-     padding-left: 60px;
- }
- .cart-main .table th{
-     font-size: 11px;
- }
- h4.media-heading, h5.media-heading{
-     font-size: 12px;
+ .cart-main {
+    .media-body{
+        padding-left: 60px;
+    }
+    .table th{
+        font-size: 11px;
+    }
+    .media-heading{
+        font-size: 12px;
+    }
  }
 
- }
+}
 
 
 
